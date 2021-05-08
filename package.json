@@ -26,7 +26,6 @@
   "homepage": "https://github.com/nirnejak/hackon-backend#readme",
   "dependencies": {
     "apollo-server": "^2.24.0",
-    "chalk": "^4.1.1",
     "express": "^4.17.1",
     "graphql": "^15.5.0",
     "mongoose": "^5.12.7"
@@ -41,6 +40,7 @@
     "eslint-plugin-promise": "^4.3.1",
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
+    "nodemon": "^2.0.7",
     "prettier": "^2.2.1"
   },
   "lint-staged": {
