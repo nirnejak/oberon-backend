@@ -1,6 +1,18 @@
 const { gql } = require("apollo-server")
 
 const typeDefs = gql`
+  enum AllowedLivingSituation {
+    SINGLE
+    ROOMMATES
+    FAMILY
+  }
+
+  enum AllowedProfession {
+    UNEMPLOYED
+    EMPLOYED
+    STUDENT
+  }
+
   type User {
     email: String
     fullName: String
@@ -9,8 +21,8 @@ const typeDefs = gql`
     careerScore: Int
     drinkingFrequency: Int
     isNightOwl: Int
-    livingSituation: Int
-    profession: String
+    livingSituation: AllowedLivingSituation
+    profession: AllowedProfession
   }
 
   type AuthInformation {
