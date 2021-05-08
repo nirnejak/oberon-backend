@@ -1,14 +1,16 @@
-const createUser = (input) => {
+const createUser = (parent, args, context, info) => {
   const {
-    email,
-    fullName,
-    age,
-    careerScore,
-    drinkingFrequency,
-    isNightOwl,
-    livingSituation,
-    profession,
-  } = input
+    input: {
+      email,
+      fullName,
+      age,
+      careerScore,
+      drinkingFrequency,
+      isNightOwl,
+      livingSituation,
+      profession,
+    },
+  } = args
 
   // TODO: Connect with MongoDB
 
