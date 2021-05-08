@@ -1,6 +1,7 @@
 const { gql } = require("apollo-server")
 
 const typeDefs = gql`
+  "Allowed Values for Living Situation"
   enum AllowedLivingSituation {
     SINGLE
     SPOUSE
@@ -8,12 +9,14 @@ const typeDefs = gql`
     FAMILY
   }
 
+  "Allowed Values for Profession"
   enum AllowedProfession {
     UNEMPLOYED
     EMPLOYED
     STUDENT
   }
 
+  "User Details"
   type User {
     email: String
     fullName: String
@@ -26,6 +29,7 @@ const typeDefs = gql`
     profession: AllowedProfession
   }
 
+  "Authentication Response"
   type AuthInformation {
     token: String
     email: String
@@ -35,11 +39,13 @@ const typeDefs = gql`
     users: [User]
   }
 
+  "Authentication Input Data"
   input AuthInput {
     login: String
     password: String
   }
 
+  "Data Required for User Registration"
   input UserInput {
     email: String
     fullName: String
