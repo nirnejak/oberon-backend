@@ -28,8 +28,7 @@
     "apollo-server": "^2.24.0",
     "express": "^4.17.1",
     "graphql": "^15.5.0",
-    "mongoose": "^5.12.7",
-    "slugify": "^1.5.2"
+    "mongoose": "^5.12.7"
   },
   "devDependencies": {
     "eslint": "^7.26.0",
@@ -38,7 +37,7 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-promise": "^5.1.0",
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
     "nodemon": "^2.0.7",
@@ -46,5 +45,8 @@
   },
   "lint-staged": {
     "*.js": "eslint"
+  },
+  "volta": {
+    "node": "14.16.1"
   }
 }
