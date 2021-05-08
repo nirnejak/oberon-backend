@@ -20,7 +20,7 @@ const typeDefs = gql`
     isActive: Boolean
     careerScore: Int
     drinkingFrequency: Int
-    isNightOwl: Int
+    isNightOwl: Boolean
     livingSituation: AllowedLivingSituation
     profession: AllowedProfession
   }
