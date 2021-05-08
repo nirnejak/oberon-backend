@@ -18,20 +18,8 @@ const typeDefs = gql`
     email: String
   }
 
-  type Book {
-    slug: String
-    title: String
-    author: String
-  }
-
   type Query {
-    books: [Book]
-    book(slug: String): Book
-  }
-
-  input BookInput {
-    title: String
-    author: String
+    users: [User]
   }
 
   input AuthInput {
@@ -51,8 +39,6 @@ const typeDefs = gql`
   }
 
   type Mutation {
-    addBook(input: BookInput): Book
-    updateBook(slug: String, input: BookInput): Book
     createUser(input: UserInput): User
     tokenCreate(input: AuthInput): AuthInformation
   }
