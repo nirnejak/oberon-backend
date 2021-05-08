@@ -1,0 +1,49 @@
+{
+  "name": "hackon-backend",
+  "version": "1.0.0",
+  "description": "HackOn Backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "develop": "nodemon index.js",
+    "lint": "eslint ./src",
+    "lint-fix": "eslint ./src --fix",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nirnejak/hackon-backend.git"
+  },
+  "keywords": [
+    "HackOn",
+    "Backend"
+  ],
+  "author": "Jitendra Nirnejak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nirnejak/hackon-backend/issues"
+  },
+  "homepage": "https://github.com/nirnejak/hackon-backend#readme",
+  "dependencies": {
+    "apollo-server": "^2.24.0",
+    "chalk": "^4.1.1",
+    "express": "^4.17.1",
+    "graphql": "^15.5.0",
+    "mongoose": "^5.12.7"
+  },
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.2.1"
+  },
+  "lint-staged": {
+    "*.js": "eslint"
+  }
+}
