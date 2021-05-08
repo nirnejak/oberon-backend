@@ -28,7 +28,8 @@
     "apollo-server": "^2.24.0",
     "express": "^4.17.1",
     "graphql": "^15.5.0",
-    "mongoose": "^5.12.7"
+    "mongoose": "^5.12.7",
+    "slugify": "^1.5.2"
   },
   "devDependencies": {
     "eslint": "^7.26.0",
