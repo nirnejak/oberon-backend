@@ -1,4 +1,4 @@
-const createUser = (parent, args, context, info) => {
+const createUser = (parent: any, args: any, context: any, info: any) => {
   const {
     input: {
       email,
@@ -12,7 +12,7 @@ const createUser = (parent, args, context, info) => {
     },
   } = args
 
-  // TODO: Connect with MongoDB
+  // TODO: Connect with Database to create a user
 
   return {
     email,
@@ -26,6 +26,6 @@ const createUser = (parent, args, context, info) => {
   }
 }
 
-module.exports = {
+export default {
   createUser,
 }

@@ -1,4 +1,4 @@
-const userResolvers = require("./users")
+import userResolvers from "./users"
 
 const resolvers = {
   AllowedLivingSituation: {
@@ -20,4 +20,4 @@ const resolvers = {
   },
 }
 
-module.exports = resolvers
+export default resolvers
